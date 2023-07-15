@@ -5,6 +5,6 @@ setup(  name= 'sixplt',
         description='Inline matplotlib plots in the terminal with sixel', 
         py_modules=["sixplt"],
         package_dir={'': 'src'},
-        install_requires = ["matplotlib", "imagemagick"],
+        install_requires = ["matplotlib"],
         
     )
