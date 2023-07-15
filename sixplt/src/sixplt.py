@@ -22,6 +22,7 @@ def show(*args, transparent=False, **kwargs):
             plt.savefig(p.stdin, bbox_inches="tight", format='png', transparent=transparent) 
             p.stdin.close()
             p.wait()
+            plt.close()
         except FileNotFoundError:
             warnings.warn("Unable to convert plot to sixel format: Imagemagick not found.")
 
